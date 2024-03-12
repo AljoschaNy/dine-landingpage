@@ -10,9 +10,9 @@ html {
   box-sizing: border-box;
 }
 
-button {
-  border: none;
-  background: none;
+a {
+  text-decoration: none;
+  outline: none;
 }
 
 @font-face {
@@ -112,4 +112,19 @@ p {
   width: 245px;
   height: 64px;
   border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.regular-button:hover {
+  color: #242b37;
+  background-color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.regular-button:active {
+  color: #fff;
+  background-color: transparent;
+  transform: scale(0.95);
+  transition: 0.2s;
 }/*# sourceMappingURL=main.css.map */

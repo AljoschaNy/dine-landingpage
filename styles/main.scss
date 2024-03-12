@@ -51,4 +51,21 @@
   width: 245px;
   height: 64px;
   border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    color: $font-color-dark;
+    background-color: $font-color-light;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+  &:active {
+    color: $font-color-light;
+    background-color: transparent;
+    transform: scale(0.95);
+    transition: 0.2s;
+  }
 }
