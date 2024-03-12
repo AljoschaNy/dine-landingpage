@@ -5,12 +5,51 @@
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 16px;
+  box-sizing: border-box;
+}
+
+// Hero Section
+.hero-section {
+  color: $font-color-light;
+  background-color: $primary-color;
+  width: 100%;
+  height: 820px;
+
+  .container {
+    border: 1px solid;
+    max-width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 78px 165px;
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+.introduction {
+  max-width: 507px;
+  position: relative;
+  z-index: 10;
+
+  .logo {
+    margin-bottom: 153px;
+    margin-left: 2px;
+  }
+
+  p {
+    width: 445px;
+    margin: 10px 0 40px;
+  }
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  right: -70px;
 }
