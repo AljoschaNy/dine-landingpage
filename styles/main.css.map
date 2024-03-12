@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"main.css"}
+{"version":3,"sources":["partials/typography.scss","main.css","main.scss","partials/variables.scss"],"names":[],"mappings":"AAAA;EACI,6BAAA;EACA,kEAAA;ACCJ;ACAA;EACI,6BAAA;EACA,cCFc;AFIlB","file":"main.css"}
