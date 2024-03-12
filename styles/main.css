@@ -2,7 +2,15 @@
   font-family: "League Spartan";
   src: url("../../assets/fonts/LeagueSpartan-VariableFont_wght.ttf");
 }
-h1 {
-  font-family: "League Spartan";
-  color: #242b37;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
 }/*# sourceMappingURL=main.css.map */
