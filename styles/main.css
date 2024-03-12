@@ -1,3 +1,20 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
 @font-face {
   font-family: "League Spartan";
   src: url("../../assets/fonts/LeagueSpartan-VariableFont_wght.ttf");
@@ -51,18 +68,6 @@ p {
   line-height: 1.625rem;
 }
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  box-sizing: border-box;
-}
-
 .hero-section {
   color: #fff;
   background-color: #111;
@@ -70,7 +75,6 @@ html {
   height: 820px;
 }
 .hero-section .container {
-  border: 1px solid;
   max-width: 1440px;
   height: 100%;
   margin: 0 auto;
@@ -97,4 +101,15 @@ html {
   position: absolute;
   top: 0;
   right: -70px;
+}
+
+.regular-button {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: #fff;
+  width: 245px;
+  height: 64px;
+  border: 1px solid;
 }/*# sourceMappingURL=main.css.map */

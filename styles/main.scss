@@ -1,18 +1,6 @@
+@import "./partials/base";
 @import "./partials/variables";
 @import "./partials/typography";
-
-// Reset styles
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  box-sizing: border-box;
-}
 
 // Hero Section
 .hero-section {
@@ -22,7 +10,6 @@ html {
   height: 820px;
 
   .container {
-    border: 1px solid;
     max-width: 1440px;
     height: 100%;
     margin: 0 auto;
@@ -52,4 +39,16 @@ html {
   position: absolute;
   top: 0;
   right: -70px;
+}
+
+// Button Styles
+.regular-button {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: $font-color-light;
+  width: 245px;
+  height: 64px;
+  border: 1px solid;
 }
