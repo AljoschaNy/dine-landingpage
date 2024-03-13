@@ -1,5 +1,79 @@
 @font-face {
-    font-family: "League Spartan";
-    src: url("../../assets/fonts/LeagueSpartan-VariableFont_wght.ttf");
+  font-family: "League Spartan";
+  src: url("../../assets/fonts/LeagueSpartan-VariableFont_wght.ttf");
 }
 
+html {
+  font-family: "League Spartan";
+  font-size: 16px;
+}
+
+// Headings
+h1 {
+  font-size: 5rem;
+  font-weight: 300;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-size: 3rem;
+  letter-spacing: -0.5px;
+}
+
+h3 {
+  font-size: 1.25rem;
+  letter-spacing: -0.25px;
+  line-height: 1.5rem;
+}
+
+h4 {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  line-height: 1.75rem;
+}
+
+h1,
+h2 {
+  line-height: 5rem;
+}
+
+h2,
+h3 {
+  font-weight: 700;
+}
+
+@media screen and (max-width: $break-point-md) {
+  h1 {
+    font-size: 3rem;
+    letter-spacing: -0.6px;
+    line-height: 4rem;
+  }
+}
+
+@media screen and (max-width: $break-point-sm) {
+  h1 {
+    font-size: 2rem;
+    letter-spacing: -0.4px;
+    line-height: 2.5rem;
+  }
+}
+
+// Body Text
+p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.side-text {
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+
+@media screen and (max-width: $break-point-sm) {
+  p {
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+}

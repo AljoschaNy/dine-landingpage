@@ -1,8 +1,216 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
 @font-face {
   font-family: "League Spartan";
   src: url("../../assets/fonts/LeagueSpartan-VariableFont_wght.ttf");
 }
-h1 {
+html {
   font-family: "League Spartan";
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 300;
+  letter-spacing: -1px;
+}
+
+h2 {
+  font-size: 3rem;
+  letter-spacing: -0.5px;
+}
+
+h3 {
+  font-size: 1.25rem;
+  letter-spacing: -0.25px;
+  line-height: 1.5rem;
+}
+
+h4 {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  line-height: 1.75rem;
+}
+
+h1,
+h2 {
+  line-height: 5rem;
+}
+
+h2,
+h3 {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 820px) {
+  h1 {
+    font-size: 3rem;
+    letter-spacing: -0.6px;
+    line-height: 4rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  h1 {
+    font-size: 2rem;
+    letter-spacing: -0.4px;
+    line-height: 2.5rem;
+  }
+}
+p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.side-text {
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+
+@media screen and (max-width: 375px) {
+  p {
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+}
+.regular-button {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: #fff;
+  width: 245px;
+  height: 64px;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.regular-button:hover {
   color: #242b37;
+  background-color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.regular-button:active {
+  color: #fff;
+  background-color: transparent;
+  transform: scale(0.95);
+  transition: 0.2s;
+}
+
+.hero-section {
+  color: #fff;
+  background-color: #111;
+  width: 100%;
+  height: 820px;
+}
+.hero-section .container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 78px 165px;
+  position: relative;
+}
+
+@media screen and (max-width: 820px) {
+  .hero-section {
+    height: auto;
+  }
+  .hero-section .container {
+    padding: 0 40px;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 375px) {
+  .hero-section .container {
+    padding: 0 24px;
+  }
+}
+.introduction {
+  max-width: 507px;
+  position: relative;
+  z-index: 10;
+}
+.introduction .logo {
+  margin-bottom: 153px;
+  margin-left: 2px;
+}
+.introduction p {
+  max-width: 445px;
+  margin: 10px 0 40px;
+}
+
+@media screen and (max-width: 1155px) and (min-width: 820px) {
+  .introduction {
+    background: rgb(231, 213, 198);
+    background: linear-gradient(295deg, rgba(231, 213, 198, 0) 2%, rgba(231, 213, 198, 0.4) 9%, rgba(43, 35, 30, 0.4) 28%, rgba(17, 17, 17, 0.6) 36%, rgb(17, 17, 17) 46%);
+  }
+}
+@media screen and (max-width: 820px) {
+  .introduction {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .introduction .logo {
+    margin: 48.7vw 0 38px;
+  }
+  .introduction h1 {
+    text-align: center;
+    max-width: 327px;
+    margin-bottom: 20px;
+  }
+  .introduction p {
+    text-align: center;
+    max-width: 573px;
+    margin-bottom: 52px;
+  }
+  .introduction > :last-child {
+    margin-bottom: 216px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .introduction .logo {
+    width: 82px;
+    margin: 61.87vw 0 36px;
+  }
+  .introduction h1 {
+    max-width: 200px;
+    margin-bottom: 21px;
+  }
+  .introduction p {
+    margin-bottom: 53px;
+  }
+  .introduction > :last-child {
+    margin-bottom: 152px;
+  }
+}
+.hero-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 820px) {
+  .hero-image {
+    display: block;
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
