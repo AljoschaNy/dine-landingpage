@@ -89,6 +89,32 @@ p {
     line-height: 1.625rem;
   }
 }
+.regular-button {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: #fff;
+  width: 245px;
+  height: 64px;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.regular-button:hover {
+  color: #242b37;
+  background-color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.regular-button:active {
+  color: #fff;
+  background-color: transparent;
+  transform: scale(0.95);
+  transition: 0.2s;
+}
+
 .hero-section {
   color: #fff;
   background-color: #111;
@@ -187,29 +213,4 @@ p {
     display: block;
     width: 100%;
   }
-}
-.regular-button {
-  font-size: 1rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-  color: #fff;
-  width: 245px;
-  height: 64px;
-  border: 1px solid;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.regular-button:hover {
-  color: #242b37;
-  background-color: #fff;
-  transition: 0.3s;
-  cursor: pointer;
-}
-.regular-button:active {
-  color: #fff;
-  background-color: transparent;
-  transform: scale(0.95);
-  transition: 0.2s;
 }/*# sourceMappingURL=main.css.map */
