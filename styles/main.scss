@@ -6,3 +6,46 @@
 
 // Sections
 @import "./sections/hero-section";
+
+// Feature section
+.feature-section {
+  width: 100%;
+  margin-top: -57px;
+
+  .container {
+    max-width: 1110px;
+    margin: 0 auto;
+    background-color: white;
+  }
+}
+
+// Feature
+.feature {
+  height: 720px;
+  margin-bottom: 121px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+}
+
+.feature-img-left {
+  flex-direction: row-reverse;
+}
+
+.feature-image {
+    max-width: 540px;
+    object-fit: cover;
+    box-shadow: 0 40px 40px -30px rgb(143, 143, 143);
+}
+
+.feature-description {
+  max-width: 445px;
+  margin-left: 20px;
+
+  h2 {
+    margin: 55px 0 27px;
+  }
+}
+
