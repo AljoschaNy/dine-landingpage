@@ -216,17 +216,6 @@ p {
     width: 100%;
   }
 }
-.feature-section {
-  position: relative;
-}
-.feature-section .container {
-  max-width: 1210px;
-  margin: 0 auto;
-}
-.feature-section .container > :first-child {
-  margin-top: -72px;
-}
-
 .feature {
   height: 720px;
   padding: 0 50px;
@@ -360,4 +349,14 @@ p {
   .bg-pattern-lines {
     display: none;
   }
+}
+.feature-section {
+  position: relative;
+}
+.feature-section .container {
+  max-width: 1210px;
+  margin: 0 auto;
+}
+.feature-section .container > :first-child {
+  margin-top: -72px;
 }/*# sourceMappingURL=main.css.map */
