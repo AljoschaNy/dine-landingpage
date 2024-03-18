@@ -9,20 +9,19 @@
 
 // Feature section
 .feature-section {
-  width: 100%;
   position: relative;
 
   .container {
     max-width: 1110px;
     margin: 0 auto;
-  }
 
-  > :first-child {
-    margin-top: $feature-offset;
+    > :first-child {
+      margin-top: $feature-offset;
+    }
   }
 }
 
-// Feature
+// Feature Component
 .feature {
   height: 720px;
   margin-bottom: 100px;
@@ -31,6 +30,10 @@
   justify-content: space-between;
   align-items: center;
   z-index: 5;
+
+  picture {
+    height: 100%;
+  }
 
   &:last-child {
     margin-bottom: $feature-offset;
@@ -61,7 +64,76 @@
   }
 }
 
+@media screen and (max-width: $break-point-md) {
+  .feature,
+  .feature-img-left {
+    flex-direction: column-reverse;
+  }
+
+  .feature {
+    text-align: center;
+    height: auto;
+    margin-bottom: 118px;
+
+    &:last-child {
+      .feature-image {
+        margin-top: 0;
+      }
+
+      .feature-description {
+        margin-bottom: 118px;
+        margin-left: 0;
+      }
+    }
+  }
+
+  .feature-image {
+    margin: 0 30px;
+  }
+
+  .feature-description {
+    margin-top: 56px;
+
+    h2 {
+      margin-top: 39px;
+    }
+  }
+}
+
+@media screen and (max-width: $break-point-sm) {
+  .feature {
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 100px;
+
+    &:last-child {
+      .feature-description {
+        margin-bottom: 100px;
+      }
+    }
+  }
+
+  .feature-description {
+    max-width: 445px;
+    margin-top: 48px;
+    margin-left: 0;
+
+    h2 {
+      margin: 36px 0 13px;
+    }
+  }
+}
+
 // Background Patterns
+.pattern-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
 .bg-pattern-top-left {
   position: absolute;
   top: 320px;
@@ -78,4 +150,29 @@
   position: absolute;
   right: -8vw;
   top: 330px;
+}
+
+@media screen and (max-width: $break-point-md) {
+  .bg-pattern-top-left {
+    top: 190px;
+    left: -515px;
+  }
+
+  .bg-pattern-bottom-right {
+    bottom: -15px;
+    right: -520px;
+    overflow: hidden;
+  }
+
+  .bg-pattern-lines {
+    right: 5vw;
+    top: 210px;
+  }
+}
+
+@media screen and (max-width: $break-point-sm) {
+  .pattern-wrapper,
+  .bg-pattern-lines {
+    display: none;
+  }
 }
