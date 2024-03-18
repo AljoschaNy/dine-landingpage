@@ -1,0 +1,15 @@
+@import "../partials/components/feature";
+@import "../partials/components/feature-bg-patterns";
+
+.feature-section {
+  position: relative;
+
+  .container {
+    max-width: 1210px;
+    margin: 0 auto;
+
+    > :first-child {
+      margin-top: $feature-offset;
+    }
+  }
+}

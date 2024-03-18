@@ -28,11 +28,13 @@ h1 {
   font-size: 5rem;
   font-weight: 300;
   letter-spacing: -1px;
+  line-height: 5rem;
 }
 
 h2 {
   font-size: 3rem;
   letter-spacing: -0.5px;
+  line-height: 3rem;
 }
 
 h3 {
@@ -46,11 +48,6 @@ h4 {
   font-weight: 600;
   letter-spacing: 2.5px;
   line-height: 1.75rem;
-}
-
-h1,
-h2 {
-  line-height: 5rem;
 }
 
 h2,
@@ -67,6 +64,11 @@ h3 {
 }
 @media screen and (max-width: 375px) {
   h1 {
+    font-size: 2rem;
+    letter-spacing: -0.4px;
+    line-height: 2.5rem;
+  }
+  h2 {
     font-size: 2rem;
     letter-spacing: -0.4px;
     line-height: 2.5rem;
@@ -213,4 +215,148 @@ p {
     display: block;
     width: 100%;
   }
+}
+.feature {
+  height: 720px;
+  padding: 0 50px;
+  margin-bottom: 100px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+}
+.feature:last-child {
+  margin-bottom: -72px;
+}
+.feature:last-child .feature-image {
+  margin-top: 100px;
+}
+
+.feature-img-left {
+  flex-direction: row-reverse;
+}
+
+.feature-image {
+  max-width: 540px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  box-shadow: 0 80px 80px -80px rgb(0, 0, 0);
+}
+
+.feature-description {
+  max-width: 445px;
+  margin-top: 30px;
+  margin: 0 20px;
+}
+.feature-description h2 {
+  margin: 55px 0 27px;
+}
+
+@media screen and (max-width: 820px) {
+  .feature,
+  .feature-img-left {
+    flex-direction: column-reverse;
+  }
+  .feature {
+    text-align: center;
+    height: auto;
+    padding: 0 24px;
+    margin-bottom: 118px;
+  }
+  .feature:last-child .feature-image {
+    margin-top: 0;
+  }
+  .feature:last-child .feature-description {
+    margin-bottom: 118px;
+    margin-left: 0;
+  }
+  .feature-image {
+    width: 100%;
+  }
+  .feature-description {
+    margin-top: 56px;
+  }
+  .feature-description h2 {
+    margin-top: 39px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .feature {
+    width: 100%;
+    padding: 0 24px;
+    margin-bottom: 100px;
+  }
+  .feature:last-child .feature-description {
+    margin-bottom: 100px;
+  }
+  .feature-image {
+    box-shadow: 0 40px 40px -40px rgb(0, 0, 0);
+  }
+  .feature-description {
+    max-width: 445px;
+    margin-top: 48px;
+    margin-left: 0;
+  }
+  .feature-description h2 {
+    margin: 36px 0 13px;
+  }
+}
+.pattern-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.bg-pattern-top-left {
+  position: absolute;
+  top: 320px;
+  left: 0;
+}
+
+.bg-pattern-bottom-right {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+}
+
+.bg-pattern-lines {
+  position: absolute;
+  right: 0;
+  top: 330px;
+}
+
+@media screen and (max-width: 820px) {
+  .bg-pattern-top-left {
+    top: 190px;
+    left: -515px;
+  }
+  .bg-pattern-bottom-right {
+    bottom: -15px;
+    right: -520px;
+    overflow: hidden;
+  }
+  .bg-pattern-lines {
+    right: 5vw;
+    top: 210px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .pattern-wrapper,
+  .bg-pattern-lines {
+    display: none;
+  }
+}
+.feature-section {
+  position: relative;
+}
+.feature-section .container {
+  max-width: 1210px;
+  margin: 0 auto;
+}
+.feature-section .container > :first-child {
+  margin-top: -72px;
 }/*# sourceMappingURL=main.css.map */
