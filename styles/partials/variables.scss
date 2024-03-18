@@ -14,3 +14,11 @@ $break-point-sm: 375px;
 
 $feature-offset: -57px;
 $feature-offset-fix: 30px;
+
+@media screen and (max-width: $break-point-md) {
+  $feature-offset: -97px !global;
+}
+
+@media screen and (max-width: $break-point-sm) {
+  $feature-offset: -72px !global;
+}
