@@ -213,22 +213,30 @@ p {
 }
 .feature-section {
   width: 100%;
-  margin-top: -57px;
+  position: relative;
 }
 .feature-section .container {
   max-width: 1110px;
   margin: 0 auto;
-  background-color: white;
+}
+.feature-section > :first-child {
+  margin-top: -57px;
 }
 
 .feature {
   height: 720px;
-  margin-bottom: 121px;
+  margin-bottom: 100px;
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 5;
+}
+.feature:last-child {
+  margin-bottom: -57px;
+}
+.feature:last-child .feature-image {
+  margin-top: 100px;
 }
 
 .feature-img-left {
@@ -239,13 +247,32 @@ p {
   max-width: 540px;
   -o-object-fit: cover;
      object-fit: cover;
-  box-shadow: 0 40px 40px -30px rgb(143, 143, 143);
+  box-shadow: 0 80px 80px -80px rgb(0, 0, 0);
 }
 
 .feature-description {
   max-width: 445px;
+  margin-top: 30px;
   margin-left: 20px;
 }
 .feature-description h2 {
   margin: 55px 0 27px;
+}
+
+.bg-pattern-top-left {
+  position: absolute;
+  top: 320px;
+  left: 0;
+}
+
+.bg-pattern-bottom-right {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+}
+
+.bg-pattern-lines {
+  position: absolute;
+  right: -8vw;
+  top: 330px;
 }/*# sourceMappingURL=main.css.map */
