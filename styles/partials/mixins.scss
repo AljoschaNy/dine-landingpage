@@ -1,0 +1,8 @@
+@mixin dark-section() {
+  color: $font-color-light;
+  background-color: $primary-color;
+}
+
+@mixin light-section() {
+  color: $font-color-dark;
+}

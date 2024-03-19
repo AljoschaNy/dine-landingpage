@@ -1,4 +1,5 @@
 .feature-section {
+  @include light-section;
   position: relative;
 
   .container {
