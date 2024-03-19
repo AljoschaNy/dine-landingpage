@@ -117,105 +117,6 @@ p {
   transition: 0.2s;
 }
 
-.hero-section {
-  color: #fff;
-  background-color: #111;
-  width: 100%;
-  height: 820px;
-}
-.hero-section .container {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 78px 165px;
-  position: relative;
-}
-
-@media screen and (max-width: 820px) {
-  .hero-section {
-    height: auto;
-  }
-  .hero-section .container {
-    padding: 0 40px;
-    overflow: hidden;
-  }
-}
-@media screen and (max-width: 375px) {
-  .hero-section .container {
-    padding: 0 24px;
-  }
-}
-.introduction {
-  max-width: 521px;
-  position: relative;
-  z-index: 10;
-}
-.introduction .logo {
-  margin-bottom: 153px;
-  margin-left: 2px;
-}
-.introduction p {
-  max-width: 445px;
-  margin: 10px 0 40px;
-}
-
-@media screen and (max-width: 1155px) and (min-width: 820px) {
-  .introduction {
-    background: rgb(231, 213, 198);
-    background: linear-gradient(295deg, rgba(231, 213, 198, 0) 2%, rgba(231, 213, 198, 0.4) 9%, rgba(43, 35, 30, 0.4) 28%, rgba(17, 17, 17, 0.6) 36%, rgb(17, 17, 17) 46%);
-  }
-}
-@media screen and (max-width: 820px) {
-  .introduction {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .introduction .logo {
-    margin: 48.7vw 0 38px;
-  }
-  .introduction h1 {
-    text-align: center;
-    max-width: 327px;
-    margin-bottom: 20px;
-  }
-  .introduction p {
-    text-align: center;
-    max-width: 573px;
-    margin-bottom: 52px;
-  }
-  .introduction > :last-child {
-    margin-bottom: 216px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .introduction .logo {
-    width: 82px;
-    margin: 61.87vw 0 36px;
-  }
-  .introduction h1 {
-    max-width: 200px;
-    margin-bottom: 21px;
-  }
-  .introduction p {
-    margin-bottom: 53px;
-  }
-  .introduction > :last-child {
-    margin-bottom: 152px;
-  }
-}
-.hero-image {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-@media screen and (max-width: 820px) {
-  .hero-image {
-    display: block;
-    width: 100%;
-  }
-}
 .feature {
   height: 720px;
   padding: 0 50px;
@@ -348,6 +249,105 @@ p {
   .pattern-wrapper,
   .bg-pattern-lines {
     display: none;
+  }
+}
+.hero-section {
+  color: #fff;
+  background-color: #111;
+  width: 100%;
+  height: 820px;
+}
+.hero-section .container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 78px 165px;
+  position: relative;
+}
+
+@media screen and (max-width: 820px) {
+  .hero-section {
+    height: auto;
+  }
+  .hero-section .container {
+    padding: 0 40px;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 375px) {
+  .hero-section .container {
+    padding: 0 24px;
+  }
+}
+.introduction {
+  max-width: 521px;
+  position: relative;
+  z-index: 10;
+}
+.introduction .logo {
+  margin-bottom: 153px;
+  margin-left: 2px;
+}
+.introduction p {
+  max-width: 445px;
+  margin: 10px 0 40px;
+}
+
+@media screen and (max-width: 1155px) and (min-width: 820px) {
+  .introduction {
+    background: rgb(231, 213, 198);
+    background: linear-gradient(295deg, rgba(231, 213, 198, 0) 2%, rgba(231, 213, 198, 0.4) 9%, rgba(43, 35, 30, 0.4) 28%, rgba(17, 17, 17, 0.6) 36%, rgb(17, 17, 17) 46%);
+  }
+}
+@media screen and (max-width: 820px) {
+  .introduction {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .introduction .logo {
+    margin: 48.7vw 0 38px;
+  }
+  .introduction h1 {
+    text-align: center;
+    max-width: 327px;
+    margin-bottom: 20px;
+  }
+  .introduction p {
+    text-align: center;
+    max-width: 573px;
+    margin-bottom: 52px;
+  }
+  .introduction > :last-child {
+    margin-bottom: 216px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .introduction .logo {
+    width: 82px;
+    margin: 61.87vw 0 36px;
+  }
+  .introduction h1 {
+    max-width: 200px;
+    margin-bottom: 21px;
+  }
+  .introduction p {
+    margin-bottom: 53px;
+  }
+  .introduction > :last-child {
+    margin-bottom: 152px;
+  }
+}
+.hero-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media screen and (max-width: 820px) {
+  .hero-image {
+    display: block;
+    width: 100%;
   }
 }
 .feature-section {
