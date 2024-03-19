@@ -85,6 +85,12 @@ p {
   line-height: 1.625rem;
 }
 
+.footer-text {
+  font-size: 0.875rem;
+  letter-spacing: 2px;
+  line-height: 1.75rem;
+}
+
 @media screen and (max-width: 375px) {
   p {
     font-size: 1rem;
@@ -351,6 +357,7 @@ p {
   }
 }
 .feature-section {
+  color: #242b37;
   position: relative;
 }
 .feature-section .container {
@@ -359,4 +366,56 @@ p {
 }
 .feature-section .container > :first-child {
   margin-top: -72px;
+}
+
+.footer {
+  color: #fff;
+  background-color: #111;
+  width: 100%;
+}
+.footer .container {
+  max-width: 1110px;
+  height: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer p {
+  text-transform: uppercase;
+}
+
+.footer-cta,
+.footer-info {
+  height: 240px;
+}
+
+.footer-cta {
+  position: relative;
+}
+.footer-cta .container {
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.footer-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 0;
+}
+
+.footer-info .container {
+  padding-top: 80px;
+  align-items: flex-start;
+}
+
+.menu-section {
+  background-color: gray;
+  width: 100%;
+  height: 300px;
 }/*# sourceMappingURL=main.css.map */

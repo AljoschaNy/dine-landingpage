@@ -74,6 +74,12 @@ p {
   line-height: 1.625rem;
 }
 
+.footer-text {
+  font-size: 0.875rem;
+  letter-spacing: 2px;
+  line-height: 1.75rem;
+}
+
 @media screen and (max-width: $break-point-sm) {
   p {
     font-size: 1rem;
