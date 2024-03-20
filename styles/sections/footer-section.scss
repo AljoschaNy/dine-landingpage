@@ -30,6 +30,12 @@
   }
 }
 
+@media screen and (max-width: $break-point-sm) {
+  .footer-cta {
+    height: 328px;
+  }
+}
+
 // Footer CTA
 .footer-cta {
   position: relative;

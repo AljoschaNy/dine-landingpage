@@ -397,6 +397,11 @@ p {
     height: auto;
   }
 }
+@media screen and (max-width: 375px) {
+  .footer-cta {
+    height: 328px;
+  }
+}
 .footer-cta {
   position: relative;
 }
