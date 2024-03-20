@@ -9,11 +9,4 @@
 @import "./sections/hero-section";
 @import "./sections/feature-section";
 @import "./sections/footer-section";
-
-// Menu Section
-.menu-section {
-  @include dark-section;
-  width: 100%;
-  height: 300px;
-  position: relative;
-}
+@import "./sections/menu-section";
