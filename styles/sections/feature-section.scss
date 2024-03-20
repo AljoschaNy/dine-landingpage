@@ -1,7 +1,5 @@
-@import "../partials/components/feature";
-@import "../partials/components/feature-bg-patterns";
-
 .feature-section {
+  @include light-section;
   position: relative;
 
   .container {
