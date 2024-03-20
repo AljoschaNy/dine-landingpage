@@ -11,6 +11,27 @@
   }
 }
 
+@media screen and (max-width: $break-point-md) {
+  .menu-section {
+    .container {
+      max-width: 573px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 54px;
+    }
+  }
+}
+
+@media screen and (max-width: $break-point-sm) {
+  .menu-section {
+    .container {
+      padding: 72px 24px 0;
+    }
+  }
+}
+
 // Menu Description
 .menu-description {
   max-width: 445px;
@@ -28,6 +49,13 @@
   }
 }
 
+@media screen and (max-width: $break-point-md) {
+  .menu-description {
+    text-align: center;
+    align-items: center;
+  }
+}
+
 // Menu List
 .menu-list {
   margin-top: 48px;
@@ -35,5 +63,11 @@
     padding: 0;
     margin: 0;
     border: none;
+  }
+}
+
+@media screen and (max-width: $break-point-md) {
+  .menu-list {
+    margin-top: 0;
   }
 }

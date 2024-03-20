@@ -28,3 +28,27 @@
     margin-bottom: 6px;
   }
 }
+
+@media screen and (max-width: $break-point-sm) {
+  .menu-item {
+    min-height: 418px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0;
+
+    .feature-image__bg_pattern {
+      display: none;
+    }
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      margin-bottom: 24px;
+    }
+  }
+
+  .menu-item__info {
+    margin-bottom: 54px;
+  }
+}
