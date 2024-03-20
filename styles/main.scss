@@ -12,7 +12,8 @@
 
 // Menu Section
 .menu-section {
-  background-color: gray;
+  @include dark-section;
   width: 100%;
   height: 300px;
+  position: relative;
 }
