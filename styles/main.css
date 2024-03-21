@@ -636,6 +636,11 @@ p {
   margin-bottom: 79px;
 }
 
+.event-info__event-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 .event-info__event-list .event-list__item {
   color: rgba(92, 103, 121, 0.4941176471);
   text-transform: uppercase;

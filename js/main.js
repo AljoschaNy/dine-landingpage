@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const eventImage = document.querySelector(".event-image");
 
   eventItems.forEach((item) => {
-    item.addEventListener("click", function () {
+    item.addEventListener("mouseover", function () {
       eventImage.src = this.getAttribute("data-image");
       eventImage.alt = this.getAttribute("data-image-alt");
 

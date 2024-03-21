@@ -55,6 +55,10 @@
 }
 
 .event-info__event-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
   .event-list__item {
     color: $font-color-secondary-muted;
     text-transform: uppercase;
