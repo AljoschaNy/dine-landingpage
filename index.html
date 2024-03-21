@@ -199,12 +199,14 @@
 
       <section class="event-section">
         <div class="container">
-          <div class="event-image">
+          <div class="event-image-wrapper">
             <img
+              class="event-image"
               src="./assets/images/events/family-gathering-desktop.jpg"
-              alt="family event"
+              alt="family eating"
             />
           </div>
+
           <div class="event-info-wrapper">
             <article class="event-info">
               <h2 class="event-info__header">Family Gathering</h2>
@@ -218,9 +220,27 @@
               >
             </article>
             <ul class="event-info__event-list">
-              <li class="event-list__item active">family gathering</li>
-              <li class="event-list__item">special events</li>
-              <li class="event-list__item">social events</li>
+              <li
+                data-image="./assets/images/events/family-gathering-desktop.jpg"
+                data-image-alt="family eating"
+                class="event-list__item active"
+              >
+                family gathering
+              </li>
+              <li
+                data-image="./assets/images/events/special-events-desktop.jpg"
+                data-image-alt="special"
+                class="event-list__item"
+              >
+                special events
+              </li>
+              <li
+                data-image="./assets/images/events/social-events-desktop.jpg"
+                data-image-alt="social"
+                class="event-list__item"
+              >
+                social events
+              </li>
             </ul>
           </div>
         </div>
@@ -268,6 +288,7 @@
           </div>
         </div>
       </footer>
+      <script src="./js/main.js"></script>
     </main>
   </body>
 </html>
