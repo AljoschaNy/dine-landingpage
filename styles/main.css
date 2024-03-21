@@ -43,7 +43,8 @@ h3 {
   line-height: 1.5rem;
 }
 
-h4 {
+h4,
+.event-list__item {
   font-size: 1.0625rem;
   font-weight: 600;
   letter-spacing: 2.5px;
@@ -97,30 +98,44 @@ p {
     line-height: 1.625rem;
   }
 }
-.regular-button {
+.button, .regular-button-alt, .regular-button {
+  color: #fff;
   font-size: 1rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2.5px;
-  color: #fff;
   width: 245px;
   height: 64px;
-  border: 1px solid;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.regular-button:hover {
+.button:hover, .regular-button-alt:hover, .regular-button:hover {
   color: #242b37;
   background-color: #fff;
   transition: 0.3s;
   cursor: pointer;
 }
+.button:active, .regular-button-alt:active, .regular-button:active {
+  transform: scale(0.95);
+  transition: 0.2s;
+}
+
+.regular-button {
+  border: 1px solid;
+}
 .regular-button:active {
   color: #fff;
   background-color: transparent;
-  transform: scale(0.95);
-  transition: 0.2s;
+}
+
+.regular-button-alt {
+  background-color: #111;
+  border: 1px solid #111;
+}
+.regular-button-alt:active {
+  color: #fff;
+  background-color: #111;
 }
 
 .feature {
@@ -579,4 +594,65 @@ p {
   .menu-list {
     margin-top: 0;
   }
+}
+.event-section {
+  color: #242b37;
+  padding: 0 20px;
+}
+.event-section .container {
+  max-width: 1110px;
+  padding: 160px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.event-image {
+  max-width: 540px;
+}
+.event-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.event-info-wrapper {
+  max-width: 445px;
+  margin-left: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.event-info__text {
+  margin: 19px 0 60px;
+}
+
+.event-info__cta-btn {
+  margin-bottom: 79px;
+}
+
+.event-info__event-list .event-list__item {
+  color: rgba(92, 103, 121, 0.4941176471);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  list-style: none;
+  position: relative;
+  cursor: pointer;
+}
+.event-info__event-list .event-list__item:hover {
+  color: #5c6779;
+}
+.event-info__event-list .active {
+  color: #5c6779;
+}
+.event-info__event-list .active::before {
+  content: "";
+  width: 95px;
+  height: 1px;
+  background-color: #9e7f66;
+  position: absolute;
+  top: 12px;
+  left: -125px;
 }/*# sourceMappingURL=main.css.map */

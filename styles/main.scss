@@ -10,3 +10,73 @@
 @import "./sections/feature-section";
 @import "./sections/footer-section";
 @import "./sections/menu-section";
+
+// Event Section
+.event-section {
+  @include light-section;
+  padding: 0 20px;
+
+  .container {
+    max-width: 1110px;
+    padding: 160px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.event-image {
+  max-width: 540px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.event-info-wrapper {
+  max-width: 445px;
+  margin-left: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+// Event Info
+.event-info__text {
+  margin: 19px 0 60px;
+}
+
+.event-info__cta-btn {
+  margin-bottom: 79px;
+}
+
+.event-info__event-list {
+  .event-list__item {
+    color: $font-color-secondary-muted;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+      color: $font-color-secondary;
+    }
+  }
+
+  .active {
+    color: $font-color-secondary;
+
+    &::before {
+      content: "";
+      width: 95px;
+      height: 1px;
+      background-color: $bg-pattern-color;
+      position: absolute;
+      top: 12px;
+      left: -125px;
+    }
+  }
+}
