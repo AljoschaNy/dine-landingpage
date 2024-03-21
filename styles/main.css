@@ -148,6 +148,9 @@ p {
   align-items: center;
   z-index: 5;
 }
+.feature:first-child .feature-image {
+  box-shadow: 0 80px 80px -80px rgb(0, 0, 0);
+}
 .feature:last-child {
   margin-bottom: -72px;
 }
@@ -163,7 +166,6 @@ p {
   max-width: 540px;
   -o-object-fit: cover;
      object-fit: cover;
-  box-shadow: 0 80px 80px -80px rgb(0, 0, 0);
 }
 
 .feature-description {
@@ -608,6 +610,7 @@ p {
 }
 
 .event-image {
+  box-shadow: 0 80px 80px -80px rgb(0, 0, 0);
   max-width: 540px;
 }
 .event-image img {
