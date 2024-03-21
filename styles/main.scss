@@ -29,15 +29,16 @@
 .event-image-wrapper {
   @include regular-shadow;
   max-width: 540px;
+}
 
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+.event-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 // Event Info
+
 .event-info-wrapper {
   max-width: 445px;
   margin-left: 125px;
@@ -47,7 +48,8 @@
 }
 
 .event-info__text {
-  margin: 19px 0 60px;
+  min-height: 120px;
+  margin: 19px 0 30px;
 }
 
 .event-info__cta-btn {
@@ -85,4 +87,12 @@
       left: -125px;
     }
   }
+}
+
+// Transition
+.event-info__header,
+.event-info__text,
+.event-image,
+.event-list__item {
+  @include transition-in-out(0.2s);
 }
