@@ -18,6 +18,7 @@
   }
 
   &:active {
+    color: $font-color-light;
     transform: scale(0.95);
     transition: 0.2s;
   }
@@ -28,7 +29,6 @@
   border: 1px solid;
 
   &:active {
-    color: $font-color-light;
     background-color: transparent;
   }
 }
@@ -39,7 +39,6 @@
   border: 1px solid $primary-color;
 
   &:active {
-    color: $font-color-light;
     background-color: $primary-color;
   }
 }

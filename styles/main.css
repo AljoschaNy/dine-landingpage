@@ -117,6 +117,7 @@ p {
   cursor: pointer;
 }
 .button:active, .regular-button-alt:active, .regular-button:active {
+  color: #fff;
   transform: scale(0.95);
   transition: 0.2s;
 }
@@ -125,7 +126,6 @@ p {
   border: 1px solid;
 }
 .regular-button:active {
-  color: #fff;
   background-color: transparent;
 }
 
@@ -134,7 +134,6 @@ p {
   border: 1px solid #111;
 }
 .regular-button-alt:active {
-  color: #fff;
   background-color: #111;
 }
 
