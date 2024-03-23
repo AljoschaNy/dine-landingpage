@@ -6,3 +6,12 @@
 @mixin light-section() {
   color: $font-color-dark;
 }
+
+@mixin regular-shadow() {
+  box-shadow: 0 80px 80px -80px rgb(0, 0, 0);
+}
+
+@mixin transition-in-out($time: 0.5s) {
+  transition: $time ease-in-out;
+  opacity: 1;
+}

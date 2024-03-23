@@ -8,6 +8,12 @@
   align-items: center;
   z-index: 5;
 
+  &:first-child {
+    .feature-image {
+      @include regular-shadow;
+    }
+  }
+
   &:last-child {
     margin-bottom: $feature-offset;
 
@@ -24,7 +30,6 @@
 .feature-image {
   max-width: 540px;
   object-fit: cover;
-  box-shadow: 0 80px 80px -80px rgb(0, 0, 0);
 }
 
 .feature-description {

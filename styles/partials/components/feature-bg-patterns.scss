@@ -1,51 +1,53 @@
-.pattern-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.bg-pattern-top-left {
-  position: absolute;
-  top: 320px;
-  left: 0;
-}
-
-.bg-pattern-bottom-right {
-  position: absolute;
-  bottom: $feature-offset-fix;
-  right: 0;
-}
-
-.bg-pattern-lines {
-  position: absolute;
-  right: 0;
-  top: 330px;
-}
-
-@media screen and (max-width: $break-point-md) {
-  .bg-pattern-top-left {
-    top: 190px;
-    left: -515px;
-  }
-
-  .bg-pattern-bottom-right {
-    bottom: -15px;
-    right: -520px;
+.feature-section {
+  .pattern-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
   }
 
-  .bg-pattern-lines {
-    right: 0;
-    top: 30vw;
+  .bg-pattern-top-left {
+    position: absolute;
+    top: 320px;
+    left: 0;
   }
-}
 
-@media screen and (max-width: $break-point-sm) {
-  .pattern-wrapper,
+  .bg-pattern-bottom-right {
+    position: absolute;
+    bottom: $feature-offset-fix;
+    right: 0;
+  }
+
   .bg-pattern-lines {
-    display: none;
+    position: absolute;
+    right: 0;
+    top: 330px;
+  }
+
+  @media screen and (max-width: $break-point-md) {
+    .bg-pattern-top-left {
+      top: 190px;
+      left: -515px;
+    }
+
+    .bg-pattern-bottom-right {
+      bottom: -15px;
+      right: -520px;
+      overflow: hidden;
+    }
+
+    .bg-pattern-lines {
+      right: 0;
+      top: 30vw;
+    }
+  }
+
+  @media screen and (max-width: $break-point-sm) {
+    .pattern-wrapper,
+    .bg-pattern-lines {
+      display: none;
+    }
   }
 }

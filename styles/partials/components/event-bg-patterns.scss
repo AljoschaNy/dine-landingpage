@@ -1,0 +1,46 @@
+// Event Section Patterns
+.event-section {
+  .pattern-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+
+  .bg-pattern-top-left {
+    width: 895px;
+    position: absolute;
+    left: -370px;
+    z-index: 0;
+  }
+
+  .bg-pattern-lines {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+  }
+}
+
+@media screen and (max-width: $break-point-md) {
+  .event-section {
+    .bg-pattern-top-left {
+      left: -490px;
+    }
+
+    .bg-pattern-lines {
+      top: -30px;
+      left: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: $break-point-sm) {
+  .event-section {
+    .pattern-wrapper,
+    .bg-pattern-lines {
+      display: none;
+    }
+  }
+}
