@@ -3,6 +3,8 @@ import getEventInfos from "./utils/events.js";
 document.addEventListener("DOMContentLoaded", function () {
   const eventItems = document.querySelectorAll(".event-list__item");
   const eventImage = document.querySelector(".event-image");
+  const eventImageTablet = document.querySelector(".event-image-tablet");
+  const eventImageMobile = document.querySelector(".event-image-mobile");
   const eventHeading = document.querySelector(".event-info__header");
   const eventdescription = document.querySelector(".event-info__text");
 
@@ -17,6 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
       setTimeout(() => {
         eventImage.src = infos.image.desktopSrc;
+        eventImageTablet.setAttribute("srcset", infos.image.tabletSrc);
+        eventImageMobile.setAttribute("srcset", infos.image.mobileSrc);
+
         eventImage.alt = infos.image.alt;
         eventHeading.innerText = infos.heading;
         eventdescription.innerText = infos.description;
