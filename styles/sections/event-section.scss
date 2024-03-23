@@ -1,11 +1,15 @@
 // Event Section
 .event-section {
   @include light-section;
-  padding: 160px 20px;
+  padding: 160px 0;
+  position: relative;
 
   .container {
     max-width: 1110px;
+    padding: 0 20px;
     margin: 0 auto;
+    position: relative;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
   }
