@@ -64,9 +64,14 @@ h3 {
 }
 
 // Body Text
-p {
+p,
+input,
+select {
   font-size: 1.25rem;
   font-weight: 400;
+}
+
+p {
   line-height: 1.875rem;
 }
 

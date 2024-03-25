@@ -15,3 +15,17 @@
   transition: $time ease-in-out;
   opacity: 1;
 }
+
+// Display Flex
+@mixin flex-row($justify-content: space-between, $align-items: center) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-wrap: wrap;
+}
+
+@mixin flex-col($justify-content: space-between, $align-items: center) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
