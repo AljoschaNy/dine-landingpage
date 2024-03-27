@@ -24,31 +24,29 @@
             </article>
             <form action="#" class="reservation-form">
               <div class="form-input-container">
-                <input
-                  type="text"
-                  class="form-input"
-                  placeholder="Name"
-                  required
-                />
+                <input type="text" class="form-input" placeholder="Name" />
               </div>
               <div class="form-input-container">
-                <input
-                  type="email"
-                  class="form-input"
-                  placeholder="Email"
-                  required
-                />
+                <input type="email" class="form-input" placeholder="Email" />
               </div>
               <div class="form-input-container input-with-label">
                 <label for="reservation-date">Pick a date</label>
                 <div class="date-wraper">
                   <input
                     id="reservation-date"
-                    type="text"
+                    type="number"
                     placeholder="MM"
                     class="form-input"
+                    min="1"
+                    max="12"
                   />
-                  <input type="text" placeholder="DD" class="form-input" />
+                  <input
+                    type="text"
+                    placeholder="DD"
+                    class="form-input"
+                    min="1"
+                    max="31"
+                  />
                   <input
                     type="text"
                     placeholder="YYYY"
@@ -64,8 +62,16 @@
                     type="number"
                     placeholder="09"
                     class="form-input"
+                    min="0"
+                    max="12"
                   />
-                  <input type="number" placeholder="00" class="form-input" />
+                  <input
+                    type="number"
+                    placeholder="00"
+                    class="form-input"
+                    min="0"
+                    max="12"
+                  />
                   <select
                     class="form-input input-large"
                     name="am-pm"

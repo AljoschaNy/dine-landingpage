@@ -60,7 +60,8 @@ h3 {
 }
 p,
 input,
-select {
+select,
+label {
   font-size: 1.25rem;
   font-weight: 400;
 }
