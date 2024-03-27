@@ -31,7 +31,6 @@
                   required
                 />
               </div>
-
               <div class="form-input-container">
                 <input
                   type="email"
@@ -57,7 +56,6 @@
                   />
                 </div>
               </div>
-
               <div class="form-input-container input-with-label">
                 <label for="reservation-date">Pick a time</label>
                 <div class="date-wraper">
@@ -80,15 +78,30 @@
               </div>
 
               <div class="form-input-container">
-                <input
-                  type="email"
-                  class="form-input"
-                  placeholder="Email"
-                  required
-                />
+                <div class="form-input input-people-count">
+                  <button
+                    type="button"
+                    class="btn-change-people"
+                    id="btn-reduce-people"
+                  >
+                    <span class="body-text-strong">-</span>
+                  </button>
+                  <p class="body-text-strong">
+                    <span class="people-count">0</span> people
+                  </p>
+                  <button
+                    type="button"
+                    class="btn-change-people"
+                    id="btn-add-people"
+                  >
+                    <span class="body-text-strong">+</span>
+                  </button>
+                </div>
               </div>
 
-              <button class="regular-button-alt">Make reservation</button>
+              <button type="submit" class="regular-button-alt">
+                Make reservation
+              </button>
             </form>
           </div>
         </div>

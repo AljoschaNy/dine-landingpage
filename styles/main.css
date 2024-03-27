@@ -58,10 +58,22 @@ h3 {
     line-height: 2.5rem;
   }
 }
-p {
+p,
+input,
+select {
   font-size: 1.25rem;
   font-weight: 400;
+}
+
+p {
   line-height: 1.875rem;
+}
+
+.body-text-strong {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.25px;
+  line-height: 1.5rem;
 }
 
 .side-text {
@@ -103,6 +115,11 @@ body {
 a {
   text-decoration: none;
   outline: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
 }
 
 .button, .regular-button-alt, .regular-button {
@@ -786,4 +803,114 @@ a {
 .event-list__item {
   transition: 0.2s ease-in-out;
   opacity: 1;
+}
+
+.reservation-section {
+  color: #fff;
+  padding: 65px 165px;
+  position: relative;
+}
+.reservation-section .container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.reservation-section header {
+  margin-bottom: 150px;
+}
+
+.reservation-section__bg {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.reservation-section__bg img {
+  width: 100%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.reservation-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 38px 10px;
+}
+
+.reservation-info {
+  max-width: 440px;
+}
+
+.reservation-form {
+  color: #242b37;
+  box-shadow: 0 80px 80px -80px rgb(0, 0, 0);
+  background-color: white;
+  width: 540px;
+  padding: 48px;
+}
+.reservation-form .regular-button-alt {
+  width: 100%;
+}
+
+.form-input-container {
+  width: 100%;
+}
+
+.form-input {
+  color: #8E8E8E;
+  background-color: transparent;
+  width: 100%;
+  padding: 5px 10px 15px;
+  margin-bottom: 35px;
+  border: none;
+  border-bottom: 1px solid;
+}
+
+.input-with-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.input-with-label label {
+  min-width: 90px;
+  margin-top: 20px;
+}
+
+.date-wraper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 300px;
+  gap: 16px;
+}
+.date-wraper input {
+  max-width: 80px;
+}
+.date-wraper .input-large {
+  max-width: 100px;
+}
+
+select.form-input {
+  color: #242b37;
+  border-color: #8E8E8E;
+}
+
+.input-people-count {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.input-people-count button {
+  color: #8E8E8E;
+}
+.input-people-count .body-text-strong {
+  color: #242b37;
 }/*# sourceMappingURL=main.css.map */

@@ -13,3 +13,111 @@
 @import "./sections/event-section";
 
 // Reservation Page Sections
+.reservation-section {
+  color: $font-color-light;
+  padding: 65px 165px;
+  position: relative;
+  .container {
+    max-width: 1110px;
+    margin: 0 auto;
+  }
+
+  header {
+    margin-bottom: 150px;
+  }
+}
+
+// Background image
+.reservation-section__bg {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+  }
+}
+
+// Reservation
+.reservation-wrapper {
+  @include flex-row($align-items: flex-start);
+  gap: 38px 10px;
+}
+
+.reservation-info {
+  max-width: 440px;
+}
+
+.reservation-form {
+  @include light-section;
+  @include regular-shadow;
+  background-color: white;
+  width: 540px;
+  padding: 48px;
+
+  .regular-button-alt {
+    width: 100%;
+  }
+}
+
+.form-input-container {
+  width: 100%;
+}
+
+.form-input {
+  color: $color-input-muted;
+  background-color: transparent;
+  width: 100%;
+  padding: 5px 10px 15px;
+  margin-bottom: 35px;
+  border: none;
+  border-bottom: 1px solid;
+}
+
+.input-with-label {
+  @include flex-row($align-items: flex-start);
+
+  label {
+    min-width: 90px;
+    margin-top: 20px;
+  }
+}
+
+.date-wraper {
+  @include flex-row($justify-content: flex-end);
+  width: 300px;
+  gap: 16px;
+
+  input {
+    max-width: 80px;
+  }
+
+  .input-large {
+    max-width: 100px;
+  }
+}
+
+select.form-input {
+  color: $font-color-dark;
+  border-color: $color-input-muted;
+}
+
+.input-people-count {
+  @include flex-row;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  button {
+    color: $color-input-muted;
+  }
+
+  .body-text-strong {
+    color: $font-color-dark;
+  }
+}
+
+
