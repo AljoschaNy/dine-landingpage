@@ -24,10 +24,10 @@
             </article>
             <form action="#" class="reservation-form">
               <div class="form-input-container">
-                <input type="text" class="form-input" placeholder="Name" />
+                <input type="text" class="form-input" name="name" placeholder="Name" />
               </div>
               <div class="form-input-container">
-                <input type="email" class="form-input" placeholder="Email" />
+                <input type="email" class="form-input" name="email" placeholder="Email" />
               </div>
               <div class="form-input-container input-with-label">
                 <label for="reservation-date">Pick a date</label>
@@ -35,22 +35,25 @@
                   <input
                     id="reservation-date"
                     type="number"
-                    placeholder="MM"
                     class="form-input"
+                    name="date_month"
+                    placeholder="MM"
                     min="1"
                     max="12"
                   />
                   <input
                     type="text"
-                    placeholder="DD"
                     class="form-input"
+                    name="date_day"
+                    placeholder="DD"
                     min="1"
                     max="31"
                   />
                   <input
                     type="text"
-                    placeholder="YYYY"
                     class="form-input input-large"
+                    name="date_year"
+                    placeholder="YYYY"
                   />
                 </div>
               </div>
@@ -60,15 +63,17 @@
                   <input
                     id="reservation-date"
                     type="number"
-                    placeholder="09"
                     class="form-input"
+                    name="time_hour"
+                    placeholder="09"
                     min="0"
                     max="12"
                   />
                   <input
                     type="number"
-                    placeholder="00"
                     class="form-input"
+                    name="time_minute"
+                    placeholder="00"
                     min="0"
                     max="12"
                   />
