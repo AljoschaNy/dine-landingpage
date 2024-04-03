@@ -176,7 +176,7 @@ button:focus {
   z-index: 5;
 }
 .feature:first-child .feature-image {
-  box-shadow: 0 80px 80px -80px rgb(0, 0, 0);
+  box-shadow: 0 75px 100px -50px rgba(56, 66, 85, 0.5);
 }
 .feature:last-child {
   margin-bottom: -72px;
@@ -383,9 +383,10 @@ button:focus {
 }
 #reservation-form {
   color: #242b37;
-  box-shadow: 0 80px 80px -80px rgb(0, 0, 0);
+  box-shadow: 0 75px 100px -50px rgba(56, 66, 85, 0.5);
   background-color: white;
   width: 540px;
+  max-width: 100%;
   padding: 48px;
   margin-bottom: 25px;
   position: relative;
@@ -400,6 +401,27 @@ button:focus {
   z-index: -1;
 }
 
+.reservation-btn-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 820px) {
+  #reservation-form {
+    margin-bottom: 120px;
+  }
+  #reservation-form .bg-pattern-lines {
+    display: none;
+  }
+}
+@media screen and (max-width: 375px) {
+  #reservation-form {
+    padding: 32px;
+  }
+  .reservation-btn-mobile {
+    display: flex;
+    margin: 19px auto 0;
+  }
+}
 .form-input-container {
   position: relative;
 }
@@ -465,6 +487,18 @@ button:focus {
   max-width: 100px;
 }
 
+@media screen and (max-width: 375px) {
+  .date-wraper {
+    margin-top: 8px;
+    gap: 14px;
+  }
+  .date-wraper input {
+    max-width: 73px;
+  }
+  .date-wraper .input-large {
+    max-width: 88px;
+  }
+}
 .input-people-count {
   display: flex;
   justify-content: space-between;
@@ -800,7 +834,7 @@ button:focus {
   max-width: 540px;
   -o-object-fit: cover;
      object-fit: cover;
-  box-shadow: 0 80px 80px -80px rgb(0, 0, 0);
+  box-shadow: 0 75px 100px -50px rgba(56, 66, 85, 0.5);
 }
 
 @media screen and (max-width: 820px) {
@@ -950,6 +984,29 @@ button:focus {
      object-fit: cover;
 }
 
+@media screen and (max-width: 820px) {
+  .reservation-section {
+    padding: 56px 39px 0;
+  }
+  .reservation-section header {
+    margin-bottom: 70px;
+  }
+  .bg-pattern-curve {
+    display: none;
+  }
+}
+@media screen and (max-width: 375px) {
+  .reservation-section {
+    padding: 56px 24px 0;
+  }
+  .reservation-section header {
+    margin: 0 auto 44px;
+    text-align: center;
+  }
+  .reservation-section header .logo {
+    margin-bottom: 0;
+  }
+}
 .reservation-wrapper {
   display: flex;
   justify-content: space-between;
@@ -960,4 +1017,26 @@ button:focus {
 
 .reservation-info {
   max-width: 440px;
+}
+
+@media screen and (max-width: 820px) {
+  .reservation-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 38px;
+  }
+  .reservation-info {
+    max-width: 570px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 375px) {
+  .reservation-wrapper {
+    gap: 91px;
+  }
+  .reservation-info h1 {
+    margin-bottom: 13px;
+  }
 }/*# sourceMappingURL=main.css.map */

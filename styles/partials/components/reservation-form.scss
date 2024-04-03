@@ -4,6 +4,7 @@
   @include regular-shadow;
   background-color: white;
   width: 540px;
+  max-width: 100%;
   padding: 48px;
   margin-bottom: 25px;
   position: relative;
@@ -17,6 +18,31 @@
     left: -90px;
     bottom: -23px;
     z-index: -1;
+  }
+}
+
+.reservation-btn-mobile {
+  display: none;
+}
+
+@media screen and (max-width: $break-point-md) {
+  #reservation-form {
+    margin-bottom: 120px;
+
+    .bg-pattern-lines {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: $break-point-sm) {
+  #reservation-form {
+    padding: 32px;
+  }
+
+  .reservation-btn-mobile {
+    display: flex;
+    margin: 19px auto 0;
   }
 }
 
@@ -85,6 +111,21 @@
 
   .input-large {
     max-width: 100px;
+  }
+}
+
+@media screen and (max-width: $break-point-sm) {
+  .date-wraper {
+    margin-top: 8px;
+    gap: 14px;
+
+    input {
+      max-width: 73px;
+    }
+
+    .input-large {
+      max-width: 88px;
+    }
   }
 }
 

@@ -36,6 +36,35 @@
   }
 }
 
+@media screen and (max-width: $break-point-md) {
+  .reservation-section {
+    padding: 56px 39px 0;
+
+    header {
+      margin-bottom: 70px;
+    }
+  }
+
+  .bg-pattern-curve {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $break-point-sm) {
+  .reservation-section {
+    padding: 56px 24px 0;
+
+    header {
+      margin: 0 auto 44px;
+      text-align: center;
+
+      .logo {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
 // Reservation Wrapper
 .reservation-wrapper {
   @include flex-row($align-items: flex-start);
@@ -44,4 +73,28 @@
 
 .reservation-info {
   max-width: 440px;
+}
+
+@media screen and (max-width: $break-point-md) {
+  .reservation-wrapper {
+    @include flex-col;
+    gap: 38px;
+  }
+
+  .reservation-info {
+    max-width: 570px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: $break-point-sm) {
+  .reservation-wrapper {
+    gap: 91px;
+  }
+
+  .reservation-info {
+    h1 {
+      margin-bottom: 13px;
+    }
+  }
 }
