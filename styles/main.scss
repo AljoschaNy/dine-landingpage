@@ -60,9 +60,18 @@
   background-color: white;
   width: 540px;
   padding: 48px;
+  margin-bottom: 25px;
+  position: relative;
 
   .regular-button-alt {
     width: 100%;
+  }
+
+  .bg-pattern-lines {
+    position: absolute;
+    left: -90px;
+    bottom: -23px;
+    z-index: -1;
   }
 }
 
@@ -157,3 +166,19 @@
     color: $color-input-muted;
   }
 }
+
+// pattern wrapper
+.reservation-section {
+  .pattern-wrapper {
+    .bg-pattern-curve {
+      position: absolute;
+      top: 600px;
+      left: 0;
+      z-index: -1;
+      max-width: 100%;
+    }
+
+  }
+}
+
+

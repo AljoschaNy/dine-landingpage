@@ -854,9 +854,17 @@ button:focus {
   background-color: white;
   width: 540px;
   padding: 48px;
+  margin-bottom: 25px;
+  position: relative;
 }
 #reservation-form .regular-button-alt {
   width: 100%;
+}
+#reservation-form .bg-pattern-lines {
+  position: absolute;
+  left: -90px;
+  bottom: -23px;
+  z-index: -1;
 }
 
 .form-input-container {
@@ -945,4 +953,12 @@ button:focus {
 }
 .btn-change-people .body-text-strong {
   color: #8E8E8E;
+}
+
+.reservation-section .pattern-wrapper .bg-pattern-curve {
+  position: absolute;
+  top: 600px;
+  left: 0;
+  z-index: -1;
+  max-width: 100%;
 }/*# sourceMappingURL=main.css.map */
