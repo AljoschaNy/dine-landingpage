@@ -10,7 +10,23 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 a {
   text-decoration: none;
   outline: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+
+  &:focus {
+    outline-color: $bg-pattern-color;
+  }
 }

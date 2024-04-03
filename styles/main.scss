@@ -1,13 +1,16 @@
 // Partials
-@import "./partials/base";
 @import "./partials/variables";
-@import "./partials/typography";
 @import "./partials/mixins";
+@import "./partials/typography";
+@import "./partials/base";
 @import "./partials/components";
 
-// Sections
+// Homepage Sections
 @import "./sections/hero-section";
 @import "./sections/feature-section";
 @import "./sections/footer-section";
 @import "./sections/menu-section";
 @import "./sections/event-section";
+
+// Reservation Page Sections
+@import "./sections/reservation-section";

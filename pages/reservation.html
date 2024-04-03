@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dine - Reservation</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <main>
+      <section class="reservation-section">
+        <div class="container">
+          <header>
+            <img src="../assets/logo.svg" alt="dine logo" class="logo" />
+          </header>
+          <div class="reservation-wrapper">
+            <article class="reservation-info">
+              <h1>Reservations</h1>
+              <p>
+                We can't wait to host you. If you have any special requirements
+                please feel free to call on the phone number below. We'll be
+                happy to accommodate you.
+              </p>
+              <a
+                href="#username"
+                class="regular-button reservation-btn-mobile"
+                aria-label="Book a table"
+                role="button"
+                >reserve place</a
+              >
+            </article>
+            <form action="/" id="reservation-form">
+              <div class="form-input-container">
+                <input
+                  type="text"
+                  id="username"
+                  class="form-input"
+                  name="name"
+                  placeholder="Name"
+                />
+                <div class="error-message"></div>
+              </div>
+              <div class="form-input-container">
+                <input
+                  type="text"
+                  id="email"
+                  class="form-input"
+                  name="email"
+                  placeholder="Email"
+                />
+                <div class="error-message"></div>
+              </div>
+              <div class="form-input-container input-with-label">
+                <label for="date-month">Pick a date</label>
+                <div class="date-wraper">
+                  <div class="error-message"></div>
+                  <input
+                    type="text"
+                    id="date-month"
+                    class="form-input date-input"
+                    name="date_month"
+                    placeholder="MM"
+                  />
+                  <input
+                    type="text"
+                    id="date-day"
+                    class="form-input date-input"
+                    name="date_day"
+                    placeholder="DD"
+                  />
+                  <input
+                    type="text"
+                    id="date-year"
+                    class="form-input input-large date-input"
+                    name="date_year"
+                    placeholder="YYYY"
+                  />
+                </div>
+              </div>
+              <div class="form-input-container input-with-label">
+                <label for="time_hour">Pick a time</label>
+                <div class="date-wraper">
+                  <input
+                    type="text"
+                    id="time_hour"
+                    class="form-input"
+                    name="time_hour"
+                    placeholder="09"
+                  />
+                  <input
+                    type="text"
+                    id="time_minute"
+                    class="form-input"
+                    name="time_minute"
+                    placeholder="00"
+                  />
+                  <select
+                    class="form-input input-large"
+                    name="am_pm"
+                    id="am_pm"
+                  >
+                    <option value="am">AM</option>
+                    <option value="pm">PM</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-input-container">
+                <div class="form-input input-people-count">
+                  <button
+                    type="button"
+                    class="btn-change-people"
+                    id="btn-reduce-people"
+                  >
+                    <span class="body-text-strong">-</span>
+                  </button>
+                  <p class="body-text-strong">
+                    <span class="people-count">0</span> people
+                  </p>
+                  <button
+                    type="button"
+                    class="btn-change-people"
+                    id="btn-add-people"
+                  >
+                    <span class="body-text-strong">+</span>
+                  </button>
+                </div>
+              </div>
+              <button type="submit" class="regular-button-alt">
+                Make reservation
+              </button>
+              <img
+                src="../assets/images/patterns/pattern-lines.svg"
+                alt=""
+                class="bg-pattern-lines"
+              />
+            </form>
+          </div>
+        </div>
+
+        <div class="reservation-section__bg">
+          <picture>
+            <source
+              media="(max-width: 375px)"
+              srcset="../assets/images/reservation/hero-bg-mobile.jpg"
+            />
+            <source
+              media="(max-width: 820px)"
+              srcset="../assets/images/reservation/hero-bg-tablet.jpg"
+            />
+            <img
+              src="../assets/images/reservation/hero-bg-desktop.jpg"
+              alt="plate of noodles and shrimp"
+            />
+          </picture>
+        </div>
+
+        <div class="pattern-wrapper">
+          <img
+            src="../assets/images/patterns/pattern-curve-bottom-right.svg"
+            class="bg-pattern-curve"
+            alt=""
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-info">
+        <div class="container">
+          <img src="../assets/logo.svg" alt="dine logo" class="logo" />
+
+          <div class="footer-info__wrapper">
+            <div class="address-wrapper">
+              <p class="footer-text">Marthwaite, Sedbergh</p>
+              <p class="footer-text">Cumbria</p>
+              <p class="footer-text">+00 44 123 4567</p>
+            </div>
+
+            <div class="open-times-wrapper">
+              <p class="footer-text">open times</p>
+              <p class="footer-text">MON - FRI: 09:00 AM - 10:00 PM</p>
+              <p class="footer-text">SAT - SUN: 09:00 AM - 11:30 PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

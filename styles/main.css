@@ -1,20 +1,3 @@
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-  outline: none;
-}
-
 @font-face {
   font-family: "League Spartan";
   src: url("../../assets/fonts/LeagueSpartan-VariableFont_wght.ttf");
@@ -75,10 +58,23 @@ h3 {
     line-height: 2.5rem;
   }
 }
-p {
+p,
+input,
+select,
+label {
   font-size: 1.25rem;
   font-weight: 400;
+}
+
+p {
   line-height: 1.875rem;
+}
+
+.body-text-strong {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.25px;
+  line-height: 1.5rem;
 }
 
 .side-text {
@@ -98,6 +94,38 @@ p {
     line-height: 1.625rem;
   }
 }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+button:focus {
+  outline-color: #9e7f66;
+}
+
 .button, .regular-button-alt, .regular-button {
   color: #fff;
   font-size: 1rem;
@@ -148,7 +176,7 @@ p {
   z-index: 5;
 }
 .feature:first-child .feature-image {
-  box-shadow: 0 80px 80px -80px rgb(0, 0, 0);
+  box-shadow: 0 75px 100px -50px rgba(56, 66, 85, 0.5);
 }
 .feature:last-child {
   margin-bottom: -72px;
@@ -353,6 +381,147 @@ p {
     margin-bottom: 54px;
   }
 }
+#reservation-form {
+  color: #242b37;
+  box-shadow: 0 75px 100px -50px rgba(56, 66, 85, 0.5);
+  background-color: white;
+  width: 540px;
+  max-width: 100%;
+  padding: 48px;
+  margin-bottom: 25px;
+  position: relative;
+}
+#reservation-form .regular-button-alt {
+  width: 100%;
+}
+#reservation-form .bg-pattern-lines {
+  position: absolute;
+  left: -90px;
+  bottom: -23px;
+  z-index: -1;
+}
+
+.reservation-btn-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 820px) {
+  #reservation-form {
+    margin-bottom: 120px;
+  }
+  #reservation-form .bg-pattern-lines {
+    display: none;
+  }
+}
+@media screen and (max-width: 375px) {
+  #reservation-form {
+    padding: 32px;
+  }
+  .reservation-btn-mobile {
+    display: flex;
+    margin: 19px auto 0;
+  }
+}
+.form-input-container {
+  position: relative;
+}
+.form-input-container .error-message {
+  color: #b54949;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.form-input-container .date-wraper > .error-message {
+  left: 0;
+  bottom: 15px;
+}
+
+.form-input {
+  color: #242b37;
+  background-color: transparent;
+  width: 100%;
+  padding: 5px 10px 15px;
+  margin-bottom: 35px;
+  border: none;
+  border-bottom: 1px solid #8E8E8E;
+}
+.form-input:focus {
+  outline: none;
+}
+.form-input.error {
+  color: #b54949;
+}
+.form-input.error::-moz-placeholder {
+  color: #b54949;
+  opacity: 50%;
+}
+.form-input.error::placeholder {
+  color: #b54949;
+  opacity: 50%;
+}
+
+.input-with-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.input-with-label label {
+  min-width: 90px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.date-wraper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 300px;
+  gap: 16px;
+}
+.date-wraper input {
+  max-width: 80px;
+}
+.date-wraper .input-large {
+  max-width: 100px;
+}
+
+@media screen and (max-width: 375px) {
+  .date-wraper {
+    margin-top: 8px;
+    gap: 14px;
+  }
+  .date-wraper input {
+    max-width: 73px;
+  }
+  .date-wraper .input-large {
+    max-width: 88px;
+  }
+}
+.input-people-count {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.input-people-count button {
+  color: #8E8E8E;
+}
+.input-people-count .body-text-strong {
+  color: #242b37;
+}
+
+.btn-change-people {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.btn-change-people .body-text-strong {
+  color: #8E8E8E;
+}
+
 .hero-section {
   color: #fff;
   background-color: #111;
@@ -665,7 +834,7 @@ p {
   max-width: 540px;
   -o-object-fit: cover;
      object-fit: cover;
-  box-shadow: 0 80px 80px -80px rgb(0, 0, 0);
+  box-shadow: 0 75px 100px -50px rgba(56, 66, 85, 0.5);
 }
 
 @media screen and (max-width: 820px) {
@@ -779,4 +948,95 @@ p {
 .event-list__item {
   transition: 0.2s ease-in-out;
   opacity: 1;
+}
+
+.reservation-section {
+  color: #fff;
+  padding: 65px 165px;
+  position: relative;
+}
+.reservation-section .container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.reservation-section header {
+  margin-bottom: 150px;
+}
+.reservation-section .bg-pattern-curve {
+  position: absolute;
+  top: 600px;
+  left: 0;
+  z-index: -1;
+  max-width: 100%;
+}
+
+.reservation-section__bg {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.reservation-section__bg img {
+  width: 100%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 820px) {
+  .reservation-section {
+    padding: 56px 39px 0;
+  }
+  .reservation-section header {
+    margin-bottom: 70px;
+  }
+  .bg-pattern-curve {
+    display: none;
+  }
+}
+@media screen and (max-width: 375px) {
+  .reservation-section {
+    padding: 56px 24px 0;
+  }
+  .reservation-section header {
+    margin: 0 auto 44px;
+    text-align: center;
+  }
+  .reservation-section header .logo {
+    margin-bottom: 0;
+  }
+}
+.reservation-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 38px 10px;
+}
+
+.reservation-info {
+  max-width: 440px;
+}
+
+@media screen and (max-width: 820px) {
+  .reservation-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 38px;
+  }
+  .reservation-info {
+    max-width: 570px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 375px) {
+  .reservation-wrapper {
+    gap: 91px;
+  }
+  .reservation-info h1 {
+    margin-bottom: 13px;
+  }
 }/*# sourceMappingURL=main.css.map */

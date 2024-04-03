@@ -8,10 +8,25 @@
 }
 
 @mixin regular-shadow() {
-  box-shadow: 0 80px 80px -80px rgb(0, 0, 0);
+  box-shadow: 0 75px 100px -50px rgba(56, 66, 85, 0.5);
 }
 
 @mixin transition-in-out($time: 0.5s) {
   transition: $time ease-in-out;
   opacity: 1;
+}
+
+// Display Flex
+@mixin flex-row($justify-content: space-between, $align-items: center) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-wrap: wrap;
+}
+
+@mixin flex-col($justify-content: space-between, $align-items: center) {
+  display: flex;
+  flex-direction: column;
+  justify-content: $justify-content;
+  align-items: $align-items;
 }

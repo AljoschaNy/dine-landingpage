@@ -1,0 +1,154 @@
+// Reservation Form Component
+#reservation-form {
+  @include light-section;
+  @include regular-shadow;
+  background-color: white;
+  width: 540px;
+  max-width: 100%;
+  padding: 48px;
+  margin-bottom: 25px;
+  position: relative;
+
+  .regular-button-alt {
+    width: 100%;
+  }
+
+  .bg-pattern-lines {
+    position: absolute;
+    left: -90px;
+    bottom: -23px;
+    z-index: -1;
+  }
+}
+
+.reservation-btn-mobile {
+  display: none;
+}
+
+@media screen and (max-width: $break-point-md) {
+  #reservation-form {
+    margin-bottom: 120px;
+
+    .bg-pattern-lines {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: $break-point-sm) {
+  #reservation-form {
+    padding: 32px;
+  }
+
+  .reservation-btn-mobile {
+    display: flex;
+    margin: 19px auto 0;
+  }
+}
+
+// Error Message
+.form-input-container {
+  position: relative;
+
+  .error-message {
+    color: $font-color-alert;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+  }
+
+  .date-wraper {
+    > .error-message {
+      left: 0;
+      bottom: 15px;
+    }
+  }
+}
+
+// Regular Input
+.form-input {
+  color: $font-color-dark;
+  background-color: transparent;
+  width: 100%;
+  padding: 5px 10px 15px;
+  margin-bottom: 35px;
+  border: none;
+  border-bottom: 1px solid $color-input-muted;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.error {
+    color: $font-color-alert;
+
+    &::placeholder {
+      color: $font-color-alert;
+      opacity: 50%;
+    }
+  }
+}
+
+.input-with-label {
+  @include flex-row($align-items: flex-start);
+
+  label {
+    min-width: 90px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+}
+
+// Date and Time Inputs
+.date-wraper {
+  @include flex-row($justify-content: flex-end);
+  width: 300px;
+  gap: 16px;
+
+  input {
+    max-width: 80px;
+  }
+
+  .input-large {
+    max-width: 100px;
+  }
+}
+
+@media screen and (max-width: $break-point-sm) {
+  .date-wraper {
+    margin-top: 8px;
+    gap: 14px;
+
+    input {
+      max-width: 73px;
+    }
+
+    .input-large {
+      max-width: 88px;
+    }
+  }
+}
+
+// People Count
+.input-people-count {
+  @include flex-row;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  button {
+    color: $color-input-muted;
+  }
+
+  .body-text-strong {
+    color: $font-color-dark;
+  }
+}
+
+.btn-change-people {
+  padding: 5px 10px;
+  cursor: pointer;
+
+  .body-text-strong {
+    color: $color-input-muted;
+  }
+}

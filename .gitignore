@@ -1,3 +1,7 @@
 # CSS Files
 styles/partials/*.css
 styles/partials/*.css.map
+styles/partials/components/*.css
+styles/partials/components/*.css.map
+styles/sections/*.css
+styles/sections/*.css.map
