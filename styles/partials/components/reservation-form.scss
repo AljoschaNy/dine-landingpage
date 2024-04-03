@@ -103,6 +103,7 @@
 .date-wraper {
   @include flex-row($justify-content: flex-end);
   width: 300px;
+  flex-wrap: nowrap;
   gap: 16px;
 
   input {
