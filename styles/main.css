@@ -1,6 +1,6 @@
 @font-face {
   font-family: "League Spartan";
-  src: url("../../assets/fonts/LeagueSpartan-VariableFont_wght.ttf");
+  src: url("/assets/fonts/LeagueSpartan-VariableFont_wght.ttf");
 }
 html {
   font-family: "League Spartan";
@@ -478,6 +478,7 @@ button:focus {
   align-items: center;
   flex-wrap: wrap;
   width: 300px;
+  flex-wrap: nowrap;
   gap: 16px;
 }
 .date-wraper input {
