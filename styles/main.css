@@ -122,6 +122,9 @@ button {
   background-color: transparent;
   border: none;
 }
+button:focus {
+  outline-color: #9e7f66;
+}
 
 .button, .regular-button-alt, .regular-button {
   color: #fff;
@@ -845,29 +848,53 @@ button {
   max-width: 440px;
 }
 
-.reservation-form {
+#reservation-form {
   color: #242b37;
   box-shadow: 0 80px 80px -80px rgb(0, 0, 0);
   background-color: white;
   width: 540px;
   padding: 48px;
 }
-.reservation-form .regular-button-alt {
+#reservation-form .regular-button-alt {
   width: 100%;
 }
 
 .form-input-container {
-  width: 100%;
+  position: relative;
+}
+.form-input-container .error-message {
+  color: #b54949;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.form-input-container .date-wraper > .error-message {
+  left: 0;
+  bottom: 15px;
 }
 
 .form-input {
-  color: #8E8E8E;
+  color: #242b37;
   background-color: transparent;
   width: 100%;
   padding: 5px 10px 15px;
   margin-bottom: 35px;
   border: none;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid #8E8E8E;
+}
+.form-input:focus {
+  outline: none;
+}
+.form-input.error {
+  color: #b54949;
+}
+.form-input.error::-moz-placeholder {
+  color: #b54949;
+  opacity: 50%;
+}
+.form-input.error::placeholder {
+  color: #b54949;
+  opacity: 50%;
 }
 
 .input-with-label {
@@ -879,6 +906,7 @@ button {
 .input-with-label label {
   min-width: 90px;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .date-wraper {
@@ -896,11 +924,6 @@ button {
   max-width: 100px;
 }
 
-select.form-input {
-  color: #242b37;
-  border-color: #8E8E8E;
-}
-
 .input-people-count {
   display: flex;
   justify-content: space-between;
@@ -914,4 +937,12 @@ select.form-input {
 }
 .input-people-count .body-text-strong {
   color: #242b37;
+}
+
+.btn-change-people {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.btn-change-people .body-text-strong {
+  color: #8E8E8E;
 }/*# sourceMappingURL=main.css.map */

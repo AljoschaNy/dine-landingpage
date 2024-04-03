@@ -22,72 +22,81 @@
                 happy to accommodate you.
               </p>
             </article>
-            <form action="#" class="reservation-form">
+            <form action="/" id="reservation-form">
               <div class="form-input-container">
-                <input type="text" class="form-input" name="name" placeholder="Name" />
+                <input
+                  type="text"
+                  id="username"
+                  class="form-input"
+                  name="name"
+                  placeholder="Name"
+                />
+                <div class="error-message"></div>
               </div>
               <div class="form-input-container">
-                <input type="email" class="form-input" name="email" placeholder="Email" />
+                <input
+                  type="text"
+                  id="email"
+                  class="form-input"
+                  name="email"
+                  placeholder="Email"
+                />
+                <div class="error-message"></div>
               </div>
               <div class="form-input-container input-with-label">
-                <label for="reservation-date">Pick a date</label>
+                <label for="date-month">Pick a date</label>
                 <div class="date-wraper">
+                  <div class="error-message"></div>
                   <input
-                    id="reservation-date"
-                    type="number"
-                    class="form-input"
+                    type="text"
+                    id="date-month"
+                    class="form-input date-input"
                     name="date_month"
                     placeholder="MM"
-                    min="1"
-                    max="12"
                   />
                   <input
                     type="text"
-                    class="form-input"
+                    id="date-day"
+                    class="form-input date-input"
                     name="date_day"
                     placeholder="DD"
-                    min="1"
-                    max="31"
                   />
                   <input
                     type="text"
-                    class="form-input input-large"
+                    id="date-year"
+                    class="form-input input-large date-input"
                     name="date_year"
                     placeholder="YYYY"
                   />
                 </div>
               </div>
               <div class="form-input-container input-with-label">
-                <label for="reservation-date">Pick a time</label>
+                <label for="time_hour">Pick a time</label>
                 <div class="date-wraper">
                   <input
-                    id="reservation-date"
-                    type="number"
+                    type="text"
+                    id="time_hour"
                     class="form-input"
                     name="time_hour"
                     placeholder="09"
-                    min="0"
-                    max="12"
                   />
                   <input
-                    type="number"
+                    type="text"
+                    id="time_minute"
                     class="form-input"
                     name="time_minute"
                     placeholder="00"
-                    min="0"
-                    max="12"
                   />
                   <select
                     class="form-input input-large"
-                    name="am-pm"
-                    id="am-pm"
+                    name="am_pm"
+                    id="am_pm"
                   >
                     <option value="am">AM</option>
                     <option value="pm">PM</option>
                   </select>
                 </div>
               </div>
-
               <div class="form-input-container">
                 <div class="form-input input-people-count">
                   <button
@@ -109,7 +118,6 @@
                   </button>
                 </div>
               </div>
-
               <button type="submit" class="regular-button-alt">
                 Make reservation
               </button>
@@ -135,8 +143,6 @@
         </div>
       </section>
     </main>
-
-    <a href="../index.html">Back</a>
 
     <footer class="footer">
       <div class="footer-info">

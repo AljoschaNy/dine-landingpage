@@ -17,6 +17,7 @@
   color: $font-color-light;
   padding: 65px 165px;
   position: relative;
+
   .container {
     max-width: 1110px;
     margin: 0 auto;
@@ -52,7 +53,8 @@
   max-width: 440px;
 }
 
-.reservation-form {
+// Reservation Form Component
+#reservation-form {
   @include light-section;
   @include regular-shadow;
   background-color: white;
@@ -64,18 +66,47 @@
   }
 }
 
+// Error Message
 .form-input-container {
-  width: 100%;
+  position: relative;
+
+  .error-message {
+    color: $font-color-alert;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+  }
+
+  .date-wraper {
+    > .error-message {
+      left: 0;
+      bottom: 15px;
+    }
+  }
 }
 
+// Regular Input
 .form-input {
-  color: $color-input-muted;
+  color: $font-color-dark;
   background-color: transparent;
   width: 100%;
   padding: 5px 10px 15px;
   margin-bottom: 35px;
   border: none;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid $color-input-muted;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.error {
+    color: $font-color-alert;
+
+    &::placeholder {
+      color: $font-color-alert;
+      opacity: 50%;
+    }
+  }
 }
 
 .input-with-label {
@@ -84,9 +115,11 @@
   label {
     min-width: 90px;
     margin-top: 20px;
+    cursor: pointer;
   }
 }
 
+// Date and Time Inputs
 .date-wraper {
   @include flex-row($justify-content: flex-end);
   width: 300px;
@@ -101,11 +134,7 @@
   }
 }
 
-select.form-input {
-  color: $font-color-dark;
-  border-color: $color-input-muted;
-}
-
+// People Count
 .input-people-count {
   @include flex-row;
   padding-left: 30px;
@@ -117,5 +146,14 @@ select.form-input {
 
   .body-text-strong {
     color: $font-color-dark;
+  }
+}
+
+.btn-change-people {
+  padding: 5px 10px;
+  cursor: pointer;
+
+  .body-text-strong {
+    color: $color-input-muted;
   }
 }
