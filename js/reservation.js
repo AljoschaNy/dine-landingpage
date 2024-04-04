@@ -1,33 +1,29 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const reservationForm = document.getElementById("reservation-form");
-    const username = document.getElementById("username");
-    const email = document.getElementById("email")
-    const reservationDate = document.querySelectorAll("date-input");
-    const test = document.getElementById("date-month");
+import { checkInput } from "./utils/validation.js";
 
+document.addEventListener("DOMContentLoaded", function () {
+  const reservationForm = document.getElementById("reservation-form");
+  const formInputs = {
+    username: document.getElementById("username"),
+    email: document.getElementById("email"),
+    reservationDate: document.querySelectorAll(".date-input"),
+    reservationTime: document.querySelectorAll(".time-input"),
+    peopleCount: document.getElementById("people-count"),
+  };
 
-    const checkInput = (element, errorMessage) => {
-        const parent = element.parentElement;
-        const error = parent.querySelector(".error-message");
+  reservationForm.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-        console.log(element.value)
-        if(!element.value) {
-            element.classList.add("error");
-            error.innerText = errorMessage;
-        } else {
-            element.classList.remove("error")
-            error.innerText = "";
-        }
-    }
+    const input1 = checkInput(formInputs.username, "no name");
+    const input2 = checkInput(formInputs.email, "no email");
+    const input3 = checkInput(
+      formInputs.reservationDate,
+      "This field is incomplete"
+    );
+    const input4 = checkInput(
+      formInputs.reservationTime,
+      "This field is incomplete"
+    );
 
-    reservationForm.addEventListener("submit", e => {
-        e.preventDefault();
-
-        checkInput(username, "no name");
-        checkInput(email, "no email");
-        checkInput(test, "test")
-
-    })
-
-
-})
+    if (input1 && input2 && input3 && input4) alert("form success");
+  });
+});
