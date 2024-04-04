@@ -80,17 +80,18 @@
               <div class="form-input-container input-with-label">
                 <label for="time_hour">Pick a time</label>
                 <div class="date-wraper">
+                  <div class="error-message"></div>
                   <input
                     type="text"
                     id="time_hour"
-                    class="form-input"
+                    class="form-input time-input"
                     name="time_hour"
                     placeholder="09"
                   />
                   <input
                     type="text"
                     id="time_minute"
-                    class="form-input"
+                    class="form-input time-input"
                     name="time_minute"
                     placeholder="00"
                   />
@@ -114,7 +115,8 @@
                     <span class="body-text-strong">-</span>
                   </button>
                   <p class="body-text-strong">
-                    <span class="people-count">0</span> people
+                    <span id="people-count" class="people-count">1</span>
+                    <span id="people-count-text">person</span>
                   </p>
                   <button
                     type="button"
@@ -185,6 +187,6 @@
         </div>
       </div>
     </footer>
-    <script src="../js/reservation.js"></script>
+    <script type="module" src="../js/reservation.js"></script>
   </body>
 </html>
