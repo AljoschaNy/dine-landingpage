@@ -1,6 +1,6 @@
 @font-face {
   font-family: "League Spartan";
-  src: url("/assets/fonts/LeagueSpartan-VariableFont_wght.ttf");
+  src: url("../assets/fonts/LeagueSpartan-VariableFont_wght.ttf");
 }
 html {
   font-family: "League Spartan";
