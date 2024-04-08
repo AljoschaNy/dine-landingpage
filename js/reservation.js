@@ -1,28 +1,24 @@
-import { checkInput } from "./utils/validation.js";
+import { checkInput } from "./utils/validation/validation.js";
+import { reservationForm, formInputs } from "./utils/formElements.js";
 
 document.addEventListener("DOMContentLoaded", function () {
-  const reservationForm = document.getElementById("reservation-form");
-  const formInputs = {
-    username: document.getElementById("username"),
-    email: document.getElementById("email"),
-    reservationDate: document.querySelectorAll(".date-input"),
-    reservationTime: document.querySelectorAll(".time-input"),
-    peopleCount: document.getElementById("people-count"),
-  };
-
   reservationForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const input1 = checkInput(formInputs.username, "no name");
-    const input2 = checkInput(formInputs.email, "no email");
-    const input3 = checkInput(
-      formInputs.reservationDate,
+    const input1 = checkInput(formInputs.usernameElem, "no name");
+    const input2 = checkInput(formInputs.emailElem, "no email");
+    const date = checkInput(
+      formInputs.reservationDateElem,
       "This field is incomplete"
     );
-    const input4 = checkInput(
-      formInputs.reservationTime,
+    const time = checkInput(
+      formInputs.reservationTimeElem,
       "This field is incomplete"
     );
+    console.log(input1);
+    console.log(input2);
+    console.log(date);
+    console.log(time);
 
     if (input1 && input2 && input3 && input4) alert("form success");
   });
