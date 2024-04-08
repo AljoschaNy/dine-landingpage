@@ -1,25 +1,24 @@
 import { checkInput } from "./utils/validation/validation.js";
 import { reservationForm, formInputs } from "./utils/formElements.js";
+import handlePeopleCountChange from "./utils/peopleCount.js";
 
 document.addEventListener("DOMContentLoaded", function () {
+  handlePeopleCountChange();
   reservationForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    const input1 = checkInput(formInputs.usernameElem, "no name");
-    const input2 = checkInput(formInputs.emailElem, "no email");
-    const date = checkInput(
-      formInputs.reservationDateElem,
-      "This field is incomplete"
-    );
-    const time = checkInput(
-      formInputs.reservationTimeElem,
-      "This field is incomplete"
-    );
-    console.log(input1);
-    console.log(input2);
-    console.log(date);
-    console.log(time);
+    let isValid = true;
 
-    if (input1 && input2 && input3 && input4) alert("form success");
+    const inputs = [
+      checkInput(formInputs.usernameElem, "no name"),
+      checkInput(formInputs.emailElem, "no email"),
+      checkInput(formInputs.reservationDateElem, "This field is incomplete"),
+      checkInput(formInputs.reservationTimeElem, "This field is incomplete"),
+      formInputs.peopleCountElem.innerText,
+    ];
+
+    if (inputs.includes(null)) isValid = false;
+
+    isValid ? console.log("valid form") : console.log("invalid form ");
   });
 });

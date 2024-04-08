@@ -9,7 +9,7 @@ const isEmptyCheck = (element) => {
         el.classList.add("error");
       } else {
         el.classList.remove("error");
-        result.push(el);
+        result.push(el.value);
       }
     });
 
