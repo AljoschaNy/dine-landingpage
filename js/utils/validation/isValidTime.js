@@ -6,11 +6,9 @@ const isValidTime = (time) => {
     isValidNumber(time[1], "day"),
   ].every((val) => val);
 
-  if (isValid) {
-    return { isValid };
-  } else {
-    return { isValid, errorMessage: "Please provide correct time" };
-  }
+  return isValid
+    ? { isValid }
+    : { isValid, errorMessage: "Please provide correct time" };
 };
 
 export default isValidTime;

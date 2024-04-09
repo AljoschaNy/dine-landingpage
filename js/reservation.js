@@ -7,8 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
   reservationForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    let isValid = true;
-
     const inputs = [
       validateInput(formInputs.usernameElem, "no name"),
       validateInput(formInputs.emailElem, "no email", "email"),
@@ -24,9 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
       ),
       formInputs.peopleCountElem.innerText,
     ];
-
-    if (inputs.includes(null)) isValid = false;
-
-    isValid && e.target.submit();
+    !inputs.includes(null) && e.target.submit();
   });
 });

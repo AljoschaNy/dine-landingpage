@@ -48,7 +48,6 @@ const validateInput = (element, errorMessage, type = "text") => {
       }
     }
     error.innerText = "";
-    // return emptyCheckResult.result;
   }
 };
 

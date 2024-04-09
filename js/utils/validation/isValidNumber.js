@@ -18,7 +18,7 @@ const isValidNumber = (input, type) => {
     case "hour":
       max = 12;
       break;
-    default:
+    case "minute":
       max = 60;
   }
 

@@ -7,11 +7,9 @@ const isValidDate = (date) => {
     isValidNumber(date[2], "year"),
   ].every((val) => val);
 
-  if (isValid) {
-    return { isValid };
-  } else {
-    return { isValid, errorMessage: "Please provide correct date information" };
-  }
+  return isValid
+    ? { isValid }
+    : { isValid, errorMessage: "Please provide correct date information" };
 };
 
 export default isValidDate;
