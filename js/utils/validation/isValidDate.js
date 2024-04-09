@@ -1,27 +1,4 @@
-const isValidNumber = (input, type) => {
-  const inputAsNumber = parseInt(input.value);
-  let min = 1;
-  let max;
-
-  switch (type) {
-    case "month":
-      max = 12;
-      break;
-    case "day":
-      max = 31;
-      break;
-    default:
-      const date = new Date();
-      min = date.getFullYear();
-      max = min + 1;
-  }
-
-  if (isNaN(inputAsNumber) || inputAsNumber < min || inputAsNumber > max) {
-    input.classList.add("error");
-    return false;
-  }
-  return true;
-};
+import isValidNumber from "./isValidNumber.js";
 
 const isValidDate = (date) => {
   let isValid = [
