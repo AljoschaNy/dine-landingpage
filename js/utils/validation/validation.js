@@ -1,6 +1,9 @@
 import isEmptyCheck from "./isEmptyCheck.js";
+import isValidDate from "./isValidDate.js";
+import isValidEmail from "./isValidEmail.js";
+import isValidTime from "./isValidTime.js";
 
-const checkInput = (element, errorMessage, type="text") => {
+const validateInput = (element, errorMessage, type = "text") => {
   const parent =
     element instanceof NodeList
       ? element[0].parentElement
@@ -13,13 +16,40 @@ const checkInput = (element, errorMessage, type="text") => {
     return null;
   } else {
     if (element instanceof NodeList) {
-      element.forEach((el) => el.classList.remove("error"));
+      let checkedInput = {};
+
+      switch (type) {
+        case "date":
+          checkedInput = isValidDate(element);
+          break;
+        case "time":
+          checkedInput = isValidTime(element);
+      }
+
+      if (!checkedInput.isValid) {
+        error.innerText = checkedInput.errorMessage;
+        return null;
+      }
+
+      element.forEach((el) => {
+        el.classList.remove("error");
+      });
     } else {
-      element.classList.remove("error");
+      if (type === "email" && element.value) {
+        const emailCheck = isValidEmail(element.value);
+        if (!emailCheck.isValid) {
+          element.classList.add("error");
+          error.innerText = emailCheck.errorMessage;
+          return null;
+        }
+        error.innerText = "";
+      } else {
+        element.classList.remove("error");
+      }
     }
     error.innerText = "";
-    return emptyCheckResult.result;
+    // return emptyCheckResult.result;
   }
 };
 
-export { checkInput };
+export { validateInput };
