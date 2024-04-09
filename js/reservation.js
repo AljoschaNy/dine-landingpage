@@ -12,7 +12,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const inputs = [
       checkInput(formInputs.usernameElem, "no name"),
       checkInput(formInputs.emailElem, "no email", "email"),
-      checkInput(formInputs.reservationDateElem, "This field is incomplete"),
+      checkInput(
+        formInputs.reservationDateElem,
+        "This field is incomplete",
+        "date"
+      ),
       checkInput(formInputs.reservationTimeElem, "This field is incomplete"),
       formInputs.peopleCountElem.innerText,
     ];
