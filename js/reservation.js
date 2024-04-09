@@ -27,6 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (inputs.includes(null)) isValid = false;
 
-    isValid ? console.log("valid form" + inputs) : console.log("invalid form ");
+    isValid && e.target.submit();
   });
 });
