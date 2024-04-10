@@ -42,12 +42,7 @@ Users should be able to:
 
 ### Built with
 
-<span style="display: inline-block; border:1px solid #f0f0f0;margin: 10px; padding: 4px 8px; border-radius: 5px;">Semantic HTML5 markup</span>
-<span style="display: inline-block; border:1px solid #f0f0f0;margin: 10px; padding: 4px 8px; border-radius: 5px;">SCSS</span>
-<span style="display: inline-block; border:1px solid #f0f0f0;margin: 10px; padding: 4px 8px; border-radius: 5px;">Javascript</span>
-<span style="display: inline-block; border:1px solid #f0f0f0;margin: 10px; padding: 4px 8px; border-radius: 5px;">Flexbox</span>
-<span style="display: inline-block; border:1px solid #f0f0f0;margin: 10px; padding: 4px 8px; border-radius: 5px;">Responsive Design</span>
-<span style="display: inline-block; border:1px solid #f0f0f0;margin: 10px; padding: 4px 8px; border-radius: 5px;">Pixel Perfect Design</span>
+`Semantic HTML5 markup` `SCSS` `Javascript` `Flexbox` `Responsive Design` `Pixel Perfect Design`
 
 ### What I learned
 
