@@ -47,20 +47,6 @@
   }
 }
 
-@media screen and (max-width: $break-point-lg) and (min-width: $break-point-md) {
-  .introduction {
-    background: rgb(231, 213, 198);
-    background: linear-gradient(
-      295deg,
-      rgba(231, 213, 198, 0) 2%,
-      rgba(231, 213, 198, 0.4) 9%,
-      rgba(43, 35, 30, 0.4) 28%,
-      rgba(17, 17, 17, 0.6) 36%,
-      rgba(17, 17, 17, 1) 46%
-    );
-  }
-}
-
 @media screen and (max-width: $break-point-md) {
   .introduction {
     max-width: 100%;
