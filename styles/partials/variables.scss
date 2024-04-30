@@ -1,7 +1,7 @@
 // Colors
 $primary-color: #111;
 $bg-color-light: #fff;
-$color-input-muted: #8E8E8E;
+$color-input-muted: #8e8e8e;
 
 $font-color-light: #fff;
 $font-color-dark: #242b37;
@@ -13,17 +13,16 @@ $font-color-alert: #b54949;
 $bg-pattern-color: #9e7f66;
 
 // Layout
-$break-point-lg: 1155px;
-$break-point-md: 820px;
+$break-point-md: 1155px;
 $break-point-sm: 375px;
 
 $feature-offset: -57px;
 $feature-offset-fix: 30px;
 
 @media screen and (max-width: $break-point-md) {
-  $feature-offset: -97px !global;
+  $feature-offset: -97px;
 }
 
 @media screen and (max-width: $break-point-sm) {
-  $feature-offset: -72px !global;
+  $feature-offset: -72px;
 }

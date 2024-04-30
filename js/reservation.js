@@ -22,6 +22,11 @@ document.addEventListener("DOMContentLoaded", function () {
       ),
       formInputs.peopleCountElem.innerText,
     ];
-    !inputs.includes(null) && e.target.submit();
+
+    if(!inputs.includes(null)) {
+      alert("Reservation submitted successfully!");
+      reservationForm.reset();
+    }
+     
   });
 });
